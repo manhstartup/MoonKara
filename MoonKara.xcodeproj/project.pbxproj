@@ -7,21 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9772552667A29C811896E8FB /* Pods_MoonKara.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D4576EB2930FF4FF478ACC4 /* Pods_MoonKara.framework */; };
+		EB63C36D1EBCF86800FC39D3 /* MoonHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB63C36B1EBCF86800FC39D3 /* MoonHomeVC.swift */; };
+		EB63C36E1EBCF86800FC39D3 /* MoonHomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB63C36C1EBCF86800FC39D3 /* MoonHomeVC.xib */; };
+		EB63C3701EBCF92C00FC39D3 /* MoonAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB63C36F1EBCF92C00FC39D3 /* MoonAPI.swift */; };
 		EBCE54321EBCE21E00159052 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCE54311EBCE21E00159052 /* AppDelegate.swift */; };
-		EBCE54341EBCE21E00159052 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCE54331EBCE21E00159052 /* ViewController.swift */; };
-		EBCE54371EBCE21E00159052 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBCE54351EBCE21E00159052 /* Main.storyboard */; };
 		EBCE54391EBCE21E00159052 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBCE54381EBCE21E00159052 /* Assets.xcassets */; };
 		EBCE543C1EBCE21E00159052 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBCE543A1EBCE21E00159052 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		74A67A38D6E63B753674CBD2 /* Pods-MoonKara.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoonKara.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoonKara/Pods-MoonKara.release.xcconfig"; sourceTree = "<group>"; };
+		9D4576EB2930FF4FF478ACC4 /* Pods_MoonKara.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoonKara.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB63C36B1EBCF86800FC39D3 /* MoonHomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoonHomeVC.swift; sourceTree = "<group>"; };
+		EB63C36C1EBCF86800FC39D3 /* MoonHomeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoonHomeVC.xib; sourceTree = "<group>"; };
+		EB63C36F1EBCF92C00FC39D3 /* MoonAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoonAPI.swift; sourceTree = "<group>"; };
 		EBCE542E1EBCE21E00159052 /* MoonKara.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoonKara.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBCE54311EBCE21E00159052 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EBCE54331EBCE21E00159052 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EBCE54361EBCE21E00159052 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EBCE54381EBCE21E00159052 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBCE543B1EBCE21E00159052 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EBCE543D1EBCE21E00159052 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0662EB1E6E477917B8FB44D /* Pods-MoonKara.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoonKara.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoonKara/Pods-MoonKara.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9772552667A29C811896E8FB /* Pods_MoonKara.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		60DCEAD92BE5B9CDF1036F38 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D4576EB2930FF4FF478ACC4 /* Pods_MoonKara.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB6F3229C387E986F33DCFC8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F0662EB1E6E477917B8FB44D /* Pods-MoonKara.debug.xcconfig */,
+				74A67A38D6E63B753674CBD2 /* Pods-MoonKara.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EBCE54251EBCE21E00159052 = {
 			isa = PBXGroup;
 			children = (
 				EBCE54301EBCE21E00159052 /* MoonKara */,
 				EBCE542F1EBCE21E00159052 /* Products */,
+				CB6F3229C387E986F33DCFC8 /* Pods */,
+				60DCEAD92BE5B9CDF1036F38 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,8 +81,9 @@
 			isa = PBXGroup;
 			children = (
 				EBCE54311EBCE21E00159052 /* AppDelegate.swift */,
-				EBCE54331EBCE21E00159052 /* ViewController.swift */,
-				EBCE54351EBCE21E00159052 /* Main.storyboard */,
+				EB63C36B1EBCF86800FC39D3 /* MoonHomeVC.swift */,
+				EB63C36F1EBCF92C00FC39D3 /* MoonAPI.swift */,
+				EB63C36C1EBCF86800FC39D3 /* MoonHomeVC.xib */,
 				EBCE54381EBCE21E00159052 /* Assets.xcassets */,
 				EBCE543A1EBCE21E00159052 /* LaunchScreen.storyboard */,
 				EBCE543D1EBCE21E00159052 /* Info.plist */,
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EBCE54401EBCE21E00159052 /* Build configuration list for PBXNativeTarget "MoonKara" */;
 			buildPhases = (
+				3EBD98C97EF300BFD6F528C3 /* [CP] Check Pods Manifest.lock */,
 				EBCE542A1EBCE21E00159052 /* Sources */,
 				EBCE542B1EBCE21E00159052 /* Frameworks */,
 				EBCE542C1EBCE21E00159052 /* Resources */,
+				E1090FCEC763EA81E039CDEE /* [CP] Embed Pods Frameworks */,
+				E6ACA97975D7CF60CA48BF23 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,33 +155,74 @@
 			files = (
 				EBCE543C1EBCE21E00159052 /* LaunchScreen.storyboard in Resources */,
 				EBCE54391EBCE21E00159052 /* Assets.xcassets in Resources */,
-				EBCE54371EBCE21E00159052 /* Main.storyboard in Resources */,
+				EB63C36E1EBCF86800FC39D3 /* MoonHomeVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3EBD98C97EF300BFD6F528C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E1090FCEC763EA81E039CDEE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MoonKara/Pods-MoonKara-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6ACA97975D7CF60CA48BF23 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MoonKara/Pods-MoonKara-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EBCE542A1EBCE21E00159052 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBCE54341EBCE21E00159052 /* ViewController.swift in Sources */,
 				EBCE54321EBCE21E00159052 /* AppDelegate.swift in Sources */,
+				EB63C36D1EBCF86800FC39D3 /* MoonHomeVC.swift in Sources */,
+				EB63C3701EBCF92C00FC39D3 /* MoonAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EBCE54351EBCE21E00159052 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EBCE54361EBCE21E00159052 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EBCE543A1EBCE21E00159052 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -260,6 +331,7 @@
 		};
 		EBCE54411EBCE21E00159052 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0662EB1E6E477917B8FB44D /* Pods-MoonKara.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MoonKara/Info.plist;
@@ -272,6 +344,7 @@
 		};
 		EBCE54421EBCE21E00159052 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74A67A38D6E63B753674CBD2 /* Pods-MoonKara.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MoonKara/Info.plist;
@@ -301,6 +374,7 @@
 				EBCE54421EBCE21E00159052 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
