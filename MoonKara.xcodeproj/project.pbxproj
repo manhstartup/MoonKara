@@ -21,6 +21,7 @@
 		EBCE54321EBCE21E00159052 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCE54311EBCE21E00159052 /* AppDelegate.swift */; };
 		EBCE54391EBCE21E00159052 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBCE54381EBCE21E00159052 /* Assets.xcassets */; };
 		EBCE543C1EBCE21E00159052 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBCE543A1EBCE21E00159052 /* LaunchScreen.storyboard */; };
+		EBF6A4171ECCC725000995A7 /* ParseLinkVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF6A4161ECCC725000995A7 /* ParseLinkVideo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		EBCE54381EBCE21E00159052 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBCE543B1EBCE21E00159052 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EBCE543D1EBCE21E00159052 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBF6A4161ECCC725000995A7 /* ParseLinkVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseLinkVideo.swift; sourceTree = "<group>"; };
 		F0662EB1E6E477917B8FB44D /* Pods-MoonKara.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoonKara.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoonKara/Pods-MoonKara.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,6 +107,7 @@
 				EBBB7B911ECC467400CFD580 /* MoonPlayer.swift */,
 				EBBB7B931ECC468D00CFD580 /* MoonPlayer.xib */,
 				EBBB7B951ECC48F300CFD580 /* MoonDefine.swift */,
+				EBF6A4161ECCC725000995A7 /* ParseLinkVideo.swift */,
 				EBCE54381EBCE21E00159052 /* Assets.xcassets */,
 				EBCE543A1EBCE21E00159052 /* LaunchScreen.storyboard */,
 				EBCE543D1EBCE21E00159052 /* Info.plist */,
@@ -245,6 +248,7 @@
 				EB63C36D1EBCF86800FC39D3 /* MoonHomeVC.swift in Sources */,
 				EBBB7B961ECC48F300CFD580 /* MoonDefine.swift in Sources */,
 				EB63C3701EBCF92C00FC39D3 /* MoonAPI.swift in Sources */,
+				EBF6A4171ECCC725000995A7 /* ParseLinkVideo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

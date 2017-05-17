@@ -18,7 +18,7 @@ class MoonTabBarVC: UITabBarController,UITabBarControllerDelegate {
         playerView = MoonPlayer.fromNib() as! MoonPlayer
         playerView.customization()
         self.view.addSubview(playerView)
-        NotificationCenter.default.addObserver(self, selector: #selector(displayPlayer), name: NSNotification.Name("open"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(displayPlayer(notification:)), name: NSNotification.Name("open"), object: nil)
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,10 +33,16 @@ class MoonTabBarVC: UITabBarController,UITabBarControllerDelegate {
         
     }
     
-    func displayPlayer() {
-        playerView.state = .fullScreen
-        playerView.animate()
-        playerView.didEndedSwipe(toState: playerView.state)
+    func displayPlayer(notification: NSNotification) {
+        if let item = notification.userInfo {
+            let videoID = item["id"]  as! String
+            let linkYoutube = "https://www.youtube.com/watch?v=" +  videoID
+            // do something with your image
+            playerView.state = .fullScreen
+            playerView.animate()
+            playerView.didEndedSwipe(toState: playerView.state)
+            playerView.playVideo(linkYoutube)
+        }
 
     }
 

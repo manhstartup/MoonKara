@@ -66,7 +66,9 @@ class MoonHomeVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        NotificationCenter.default.post(name: NSNotification.Name("open"), object: nil)
+        let item = self.listVideo[indexPath.row] 
+
+        NotificationCenter.default.post(name: NSNotification.Name("open"), object: nil, userInfo: item)
     }
 
 }

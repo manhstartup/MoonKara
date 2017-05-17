@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class MoonPlayer: UIView, UIGestureRecognizerDelegate {
     //MARK: PROPERTIES
@@ -14,6 +15,7 @@ class MoonPlayer: UIView, UIGestureRecognizerDelegate {
     
     var state = stateOfVC.hidden
     var direction = Direction.none
+    var videoPlayer = AVPlayer.init()
 
     //MARK: Inits
     override init(frame: CGRect) {
@@ -33,15 +35,23 @@ class MoonPlayer: UIView, UIGestureRecognizerDelegate {
         self.player.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(MoonPlayer.tapPlayView)))
         self.player.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(MoonPlayer.minimizeGestureAction)))
         self.frame.origin = self.hiddenOrigin
+        
+        //create AVPlayer
+        let playerLayer = AVPlayerLayer.init(player: self.videoPlayer)
+        playerLayer.frame =  self.player.bounds
+        self.player.layer.addSublayer(playerLayer)
+
     }
     func animate() {
         switch self.state {
         case .fullScreen:
-            UIView.animate(withDuration: 0.3, animations: { 
+            UIView.animate(withDuration: 0.3, animations: {
                 self.player.transform = CGAffineTransform.identity
+                UIApplication.shared.isStatusBarHidden = false
             })
         case .minimized:
-            UIView.animate(withDuration: 0.3, animations: { 
+            UIView.animate(withDuration: 0.3, animations: {
+                UIApplication.shared.isStatusBarHidden = true
                 let scale = CGAffineTransform.init(scaleX: 0.5, y: 0.5)
                 let trasform = scale.concatenating(CGAffineTransform.init(translationX: -self.player.bounds.width/4, y: -self.player.bounds.height/4))
                 self.player.transform = trasform
@@ -131,6 +141,7 @@ class MoonPlayer: UIView, UIGestureRecognizerDelegate {
     }
     //MARK: ACTION
     func tapPlayView() {
+        self.videoPlayer.play()
         self.state = .fullScreen
         self.didmaximize()
         self.animate()
@@ -273,8 +284,33 @@ class MoonPlayer: UIView, UIGestureRecognizerDelegate {
             self.state = finalState
             self.animate()
             self.didEndedSwipe(toState: self.state)
+            if self.state == .hidden {
+                self.videoPlayer.pause()
+            }
         }
         
     }
+    //MARK: - AVPlayer
+    func playVideo(_ linkYoutube: String) {
+        let urlYoutube = URL.init(string: linkYoutube)
 
+        DispatchQueue.main.async(execute: {
+            ParseLinkVideo.h264videosWithYoutubeURL(urlYoutube!, completion: { (videoInfo, error) in
+                if let videoURLString = videoInfo?["url"] as? String,
+                    let videoTitle = videoInfo?["title"] as? String {
+                    print("\(videoTitle)")
+                    print("\(videoURLString)")
+                    let videoLink = URL.init(string: videoURLString)
+                    let playerItem = AVPlayerItem.init(url: videoLink!)
+                    self.videoPlayer.replaceCurrentItem(with: playerItem)
+                    if self.state != .hidden {
+                        self.videoPlayer.play()
+                    }
+                    
+                }
+                
+            })
+        })
+
+    }
 }
