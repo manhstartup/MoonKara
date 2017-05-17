@@ -8,9 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		9772552667A29C811896E8FB /* Pods_MoonKara.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D4576EB2930FF4FF478ACC4 /* Pods_MoonKara.framework */; };
+		EB15E0941ECB0A2B0032F2E9 /* MoonSongCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB15E0921ECB0A2B0032F2E9 /* MoonSongCell.swift */; };
+		EB15E0951ECB0A2B0032F2E9 /* MoonSongCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB15E0931ECB0A2B0032F2E9 /* MoonSongCell.xib */; };
+		EB15E0981ECB75200032F2E9 /* MoonTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB15E0961ECB75200032F2E9 /* MoonTabBarVC.swift */; };
+		EB15E0991ECB75200032F2E9 /* MoonTabBarVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB15E0971ECB75200032F2E9 /* MoonTabBarVC.xib */; };
 		EB63C36D1EBCF86800FC39D3 /* MoonHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB63C36B1EBCF86800FC39D3 /* MoonHomeVC.swift */; };
 		EB63C36E1EBCF86800FC39D3 /* MoonHomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB63C36C1EBCF86800FC39D3 /* MoonHomeVC.xib */; };
 		EB63C3701EBCF92C00FC39D3 /* MoonAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB63C36F1EBCF92C00FC39D3 /* MoonAPI.swift */; };
+		EBBB7B921ECC467400CFD580 /* MoonPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBB7B911ECC467400CFD580 /* MoonPlayer.swift */; };
+		EBBB7B941ECC468D00CFD580 /* MoonPlayer.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBBB7B931ECC468D00CFD580 /* MoonPlayer.xib */; };
+		EBBB7B961ECC48F300CFD580 /* MoonDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBB7B951ECC48F300CFD580 /* MoonDefine.swift */; };
 		EBCE54321EBCE21E00159052 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCE54311EBCE21E00159052 /* AppDelegate.swift */; };
 		EBCE54391EBCE21E00159052 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBCE54381EBCE21E00159052 /* Assets.xcassets */; };
 		EBCE543C1EBCE21E00159052 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBCE543A1EBCE21E00159052 /* LaunchScreen.storyboard */; };
@@ -19,9 +26,16 @@
 /* Begin PBXFileReference section */
 		74A67A38D6E63B753674CBD2 /* Pods-MoonKara.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoonKara.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoonKara/Pods-MoonKara.release.xcconfig"; sourceTree = "<group>"; };
 		9D4576EB2930FF4FF478ACC4 /* Pods_MoonKara.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoonKara.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB15E0921ECB0A2B0032F2E9 /* MoonSongCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoonSongCell.swift; sourceTree = "<group>"; };
+		EB15E0931ECB0A2B0032F2E9 /* MoonSongCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoonSongCell.xib; sourceTree = "<group>"; };
+		EB15E0961ECB75200032F2E9 /* MoonTabBarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoonTabBarVC.swift; sourceTree = "<group>"; };
+		EB15E0971ECB75200032F2E9 /* MoonTabBarVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoonTabBarVC.xib; sourceTree = "<group>"; };
 		EB63C36B1EBCF86800FC39D3 /* MoonHomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoonHomeVC.swift; sourceTree = "<group>"; };
 		EB63C36C1EBCF86800FC39D3 /* MoonHomeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoonHomeVC.xib; sourceTree = "<group>"; };
 		EB63C36F1EBCF92C00FC39D3 /* MoonAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoonAPI.swift; sourceTree = "<group>"; };
+		EBBB7B911ECC467400CFD580 /* MoonPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoonPlayer.swift; sourceTree = "<group>"; };
+		EBBB7B931ECC468D00CFD580 /* MoonPlayer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoonPlayer.xib; sourceTree = "<group>"; };
+		EBBB7B951ECC48F300CFD580 /* MoonDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoonDefine.swift; sourceTree = "<group>"; };
 		EBCE542E1EBCE21E00159052 /* MoonKara.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoonKara.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBCE54311EBCE21E00159052 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBCE54381EBCE21E00159052 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -80,10 +94,17 @@
 		EBCE54301EBCE21E00159052 /* MoonKara */ = {
 			isa = PBXGroup;
 			children = (
+				EB63C36F1EBCF92C00FC39D3 /* MoonAPI.swift */,
 				EBCE54311EBCE21E00159052 /* AppDelegate.swift */,
 				EB63C36B1EBCF86800FC39D3 /* MoonHomeVC.swift */,
-				EB63C36F1EBCF92C00FC39D3 /* MoonAPI.swift */,
 				EB63C36C1EBCF86800FC39D3 /* MoonHomeVC.xib */,
+				EB15E0921ECB0A2B0032F2E9 /* MoonSongCell.swift */,
+				EB15E0931ECB0A2B0032F2E9 /* MoonSongCell.xib */,
+				EB15E0961ECB75200032F2E9 /* MoonTabBarVC.swift */,
+				EB15E0971ECB75200032F2E9 /* MoonTabBarVC.xib */,
+				EBBB7B911ECC467400CFD580 /* MoonPlayer.swift */,
+				EBBB7B931ECC468D00CFD580 /* MoonPlayer.xib */,
+				EBBB7B951ECC48F300CFD580 /* MoonDefine.swift */,
 				EBCE54381EBCE21E00159052 /* Assets.xcassets */,
 				EBCE543A1EBCE21E00159052 /* LaunchScreen.storyboard */,
 				EBCE543D1EBCE21E00159052 /* Info.plist */,
@@ -154,8 +175,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBCE543C1EBCE21E00159052 /* LaunchScreen.storyboard in Resources */,
+				EB15E0951ECB0A2B0032F2E9 /* MoonSongCell.xib in Resources */,
+				EB15E0991ECB75200032F2E9 /* MoonTabBarVC.xib in Resources */,
 				EBCE54391EBCE21E00159052 /* Assets.xcassets in Resources */,
 				EB63C36E1EBCF86800FC39D3 /* MoonHomeVC.xib in Resources */,
+				EBBB7B941ECC468D00CFD580 /* MoonPlayer.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,7 +239,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBCE54321EBCE21E00159052 /* AppDelegate.swift in Sources */,
+				EBBB7B921ECC467400CFD580 /* MoonPlayer.swift in Sources */,
+				EB15E0941ECB0A2B0032F2E9 /* MoonSongCell.swift in Sources */,
+				EB15E0981ECB75200032F2E9 /* MoonTabBarVC.swift in Sources */,
 				EB63C36D1EBCF86800FC39D3 /* MoonHomeVC.swift in Sources */,
+				EBBB7B961ECC48F300CFD580 /* MoonDefine.swift in Sources */,
 				EB63C3701EBCF92C00FC39D3 /* MoonAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

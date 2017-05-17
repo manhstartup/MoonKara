@@ -18,12 +18,53 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         window = UIWindow(frame: UIScreen.main.bounds);
         window?.backgroundColor = UIColor.white;
-        
+        /*
         let kclass:String = String.init(describing: MoonHomeVC.self)
         let vc:MoonHomeVC = MoonHomeVC(nibName: kclass, bundle: nil)
         window?.rootViewController = vc;
         window?.makeKeyAndVisible();
+        */
+        //test
+        let kclass:String = String.init(describing: MoonHomeVC.self)
+        let vc1:MoonHomeVC = MoonHomeVC(nibName: kclass, bundle: nil)
+        vc1.view.backgroundColor = UIColor.cyan
+        vc1.tabBarItem.badgeValue = "1"
+        vc1.title = "Home"
+        vc1.tabBarItem.image = UIImage(named: "tabbar_home")
+        vc1.tabBarItem.selectedImage = UIImage(named: "tabbar_home_selected")
+
         
+        let vc2: UIViewController = UIViewController()
+        vc2.view.backgroundColor = UIColor.cyan
+        vc2.tabBarItem.badgeValue = "1"
+        vc2.title = "Message"
+        vc2.tabBarItem.image = UIImage(named: "tabbar_message_center")
+        vc2.tabBarItem.selectedImage = UIImage(named: "tabbar_message_center_selected")
+
+        let vc3: UIViewController = UIViewController()
+        vc3.view.backgroundColor = UIColor.cyan
+        vc3.tabBarItem.badgeValue = "1"
+        vc3.title = "Discover"
+        vc3.tabBarItem.image = UIImage(named: "tabbar_discover")
+        vc3.tabBarItem.selectedImage = UIImage(named: "tabbar_discover_selected")
+
+        let vc4: UIViewController = UIViewController()
+        vc4.view.backgroundColor = UIColor.cyan
+        vc4.tabBarItem.badgeValue = "4"
+        vc4.title = "Profile"
+        vc4.tabBarItem.image = UIImage(named: "tabbar_profile")
+        vc4.tabBarItem.selectedImage = UIImage(named: "tabbar_profile_selected")
+
+        let navC1: UINavigationController = UINavigationController(rootViewController: vc1)
+        let navC2: UINavigationController = UINavigationController(rootViewController: vc2)
+        let navC3: UINavigationController = UINavigationController(rootViewController: vc3)
+        let navC4: UINavigationController = UINavigationController(rootViewController: vc4)
+
+        let tabBarC: MoonTabBarVC = MoonTabBarVC()
+        tabBarC.viewControllers = [navC1,navC2,navC3,navC4]
+        window?.rootViewController = tabBarC;
+        window?.makeKeyAndVisible();
+
         return true
     }
 
